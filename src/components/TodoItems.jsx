@@ -8,7 +8,7 @@ let TodoItems = () => {
     <>
       {
         todoItems.map((item) => (
-          <TodoItem todoName={item.name} todoDate={item.date} handleDelete={deleteItem}></TodoItem>
+          <TodoItem key={item.name} todoName={item.name} todoDate={item.date} handleDelete={deleteItem}></TodoItem>
         ))
       }
     </>
