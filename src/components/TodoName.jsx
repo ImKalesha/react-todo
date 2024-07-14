@@ -1,7 +1,10 @@
+import styles from './Header.module.css'
+
 let TodoName = () => {
+  const HeaderName = 'Todo App';
   return (
     <>
-      <h1>Todo App</h1>
+      <span className={styles.header}>{HeaderName}</span>
     </>
   )
 }
