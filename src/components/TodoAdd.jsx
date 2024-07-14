@@ -3,9 +3,11 @@ import styles from "./TodoAdd.module.css";
 import { MdAddAlarm } from "react-icons/md";
 import { useRef, useContext } from "react";
 import { TodoItemsContext } from "../contexts/todo-items-context";
+import { useReducer } from "react";
+
 
 function TodoAdd() {
-  const { addNewItem } = useContext(TodoItemsContext); 
+  const { addNewItem } = useContext(TodoItemsContext);
 
   // const [todoName, setTodoName] = useState('');
   // const [todoDate, setTodoDate] = useState('');
